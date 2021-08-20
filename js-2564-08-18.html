@@ -274,7 +274,7 @@
             var dot = email.lastIndexOf(".");
             if (at<1||dot<at+2||dot+2 >= email.lenght) {
                 alert("Not a valid email");
-                email_id.focus("")
+                email_id.focus();
             }
             //mobile number 
             var user_mobile=document.getElementById("mobile_number");
@@ -284,7 +284,7 @@
             }
             //gender
             var gender= document.forms["myform"]["gender"];
-            if (gender.value == "")
+            if (gender.value == "") {
                alert('Select a gender');
                gender.focus();
             }
@@ -309,8 +309,9 @@
             //province
             var province = document.getElementsByName("Province");
             if (city.value == "") {
-                alert("Please enter province"); {
+                alert("Please enter province"); 
                 province.focus();
+            }
             //country
             var country = document.getElementsByName("country");
             if(country.value == "Thailand") {
