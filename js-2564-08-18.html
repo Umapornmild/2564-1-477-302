@@ -1,4 +1,4 @@
-<html>
+<html> 
 
 <head>
     <title>Student Registration Form</title>
@@ -30,10 +30,10 @@
 
 </head>
 
-<body>
+<body> 
     <h3>STUDENT REGISTRATION FORM</h3>
 
-    
+
         <table align="center" cellpadding="10">
 
             <!----- First Name ---------------------------------------------------------->
@@ -243,7 +243,7 @@
                 </td>
             </tr>
         </table>
-    
+
 
     <script>
         function validate_all() {
@@ -264,7 +264,7 @@
                 lname.focus();
             }
             //date of birth
-            var date= document.forms["myform"]["date"];
+            var date= document.forms("myform")("date");
             if (date.value == ("Select a date of birth")) {
                 alert("select a  date of birth");
                 date.focus();
@@ -277,19 +277,19 @@
                 email_id.focus();
             }
             //mobile number 
-            var user_mobile=document.getElementById("mobile_number");
+            var mobile=document.getElementById("mobile_number");
             if (mobile.length != 10) {
-                alert("mobile nubmer must be 10 digit no. ");
+                alert("mobile nubmer must be 10 digit no.");
                 mobile_number.focus();
             }
             //gender
-            var gender= document.forms["myform"]["gender"];
+            var gender= document.forms("myform")("gender");
             if (gender.value == "") {
                alert('Select a gender');
                gender.focus();
             }
             //address
-            var address = document.forms["RegForm"]["Address"];
+            var address = document.forms("RegForm")("Address");
             if (address.value == "") {
                 alert("Please enter your address.");
                 address.focus();
@@ -315,7 +315,7 @@
             //country
             var country = document.getElementsByName("country");
             if (country.value == "Thailand") {
-                alert("Please enter country"‎);
+                alert("Please enter country");
                 country.focus();
             }
             //hobbies
@@ -323,9 +323,9 @@
             if (hobbies.value == ("!hobbies.checked")) {
                 alert("select a hobby");
                 hobbies.focus();
-            } 
+            }    
     </script>
-
+    
 </body>
 
-</html>
+</html> 
